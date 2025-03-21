@@ -1,0 +1,65 @@
+login-username
+password-password
+TC-1--> Passed(Logged in successfully)
+
+
+login-user
+password-pass
+TC-2--> Passes(showing msg "Invalid Credentials")
+
+login-blank
+password-blank
+TC-3--> Passed(showing msg "Invalid Credentials")
+
+verifying proper acc details 
+TC-4--> Passed(Page loads successfully with account types and balances displayed)
+
+
+validating acc type
+TC-5--> Passed(All account types should be displayed correctly)
+
+
+Successful Fund Transfer
+TC-6-->Passes
+
+---------------------------------------------------------------------------------------------------------------------------
+Fund Transfer with Insufficient Balance
+TC-7-->Failed(Getting successfully transfered but it should show "insufficient balance")
+---------------------------------------------------------------------------------------------------------------------------
+Fund Transfer with Negative Amount
+TC-8-->Failed(Getting successfully transfered but it should show "invalid amount entered")
+---------------------------------------------------------------------------------------------------------------------------
+
+
+Successful Bill Payment
+TC-9-->Passed(The payment was successfully submitted)
+
+---------------------------------------------------------------------------------------------------------------------------
+Schedule a Bill Payment for a Future Date
+TC-10-->Failed(Getting msg "The payment was successfully submitted" but should get "Payment should be scheduled successfully")
+---------------------------------------------------------------------------------------------------------------------------
+
+
+Pay Bills Without Entering Amount
+TC-11-->Passed(Getting msg "Please fill out this field")
+
+
+Successfully Add a New Payee
+TC-12-->Passed(Geting msg "Payee added successfully")
+
+---------------------------------------------------------------------------------------------------------------------------
+Add Payee with Missing Details
+TC-13-->Failed(Geting msg "Payee added successfully" but should get msg "All fields are mandatory")
+---------------------------------------------------------------------------------------------------------------------------
+
+
+Download Account Statement
+TC-14-->Passed(File is dowmloaded successfully)
+
+
+Logout Successfully
+TC-15-->Passed(Logged Out successfully)
+
+
+Verify Session Expiry After Logout
+TC-16-->Passed(Login Page is comming as expected)
